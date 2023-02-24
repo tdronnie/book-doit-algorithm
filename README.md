@@ -9,7 +9,7 @@ i# book-doit-algorithm
 
 ### 깃헙 관련 처리
 - 마크다운 내보낼 때 whitespace 에러
-![whitespace에러](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c10cc958-aa9b-403b-a22d-e2911ce4e99b/whitespace.png)
+![whitespace에러](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c10cc958-aa9b-403b-a22d-e2911ce4e99b.png)
  - 리눅스 시스템은 줄 끝이 LF(Line Feed)고 윈도우는 CR(Carriage Return)과 LF인 CRLF로 이루어지기 때문에 에러가 발생한다.
 
  <br>
