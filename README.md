@@ -1,5 +1,5 @@
 
-i# book-doit-algorithm
+# book-doit-algorithm
 ## 😎준비
 ### 책:  do it 자료구조와 함께 배우는 알고리즘 입문:자바편
 ### 진행 시간 및 방식
