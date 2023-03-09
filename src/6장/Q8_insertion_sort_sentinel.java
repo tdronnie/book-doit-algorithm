@@ -18,23 +18,22 @@ public class Q8_insertion_sort_sentinel {
 			a[i] = Integer.parseInt(br.readLine());
 		}
 
-		insertionSort(a, n);
+		insertionSort(a, n+1);
 	}
 
-	// 배열안에 들어오는 요소는 자연수라고 가정, a[0]은 -1로 한다
+	// 배열안에 들어오는 요소는 자연수라고 가정
 	static void insertionSort(int[] a, int n) {
-		a[0] = -1; //보초값 저장
-		for (int i = 2; i < n + 1; i++) {
+		for (int i = 2; i < n; i++) {
 			int j;
-			int tmp = a[i];
-			for (j = i; tmp < a[j - 1]; j--) { // a[0]까지 갈 경우 끝
+			int tmp = a[0] = a[i]; //tmp와 a[0]에 a[i] 값 저장
+			for (j = i; tmp < a[j - 1]; j--) {
 				a[j] = a[j - 1]; // 요소 뒤로 밀기
 			}
-			a[j] = tmp; // tmp보다 작은 요소 바로 다음에 배치
+			if (j > 0) a[j] = tmp; // 보초값인 0인덱스 바로 다음까지 왔을 경우 바로 다음에 배치
 
 		}
 
-		for (int z = 0; z < n+1; z++) // 정렬 완료 배열 출력
+		for (int z = 1; z < n; z++) // 정렬 완료 배열 출력, 보초 제외 출력
 			System.out.printf("%2d", a[z]);
 		System.out.println();
 
